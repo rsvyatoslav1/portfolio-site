@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(59, 59, 59);
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+div, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#up-button {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+
+    padding: 20px;
+
+    border: none;
+    border-radius: 30px;
+
+    color: white;
+    background-color: rgb(59, 59, 59);
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+#up-button:hover {
+    background-color: rgb(30, 30, 30);
+    box-shadow: 0px 0px 10px rgb(30, 30, 30);
+}
+
+
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: rgb(59, 59, 59);
+    color: white;
+}
+
+.logo {
+    margin-left: 100px;
+
+    text-shadow: 0px 0px 10px white;
+
+    transition: 0.2s;
+}
+.logo:hover {
+    text-shadow: 0px 0px 20px white;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-right: 50px;
+    padding-top: 10px;
+}
+
+.nav-item {
+    padding: 20px 50px;
+
+    background-color: transparent;
+    color: white;
+
+    border: none;
+    border-radius: 15px 15px 0px 0px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+.nav-item:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+
+    padding-bottom: 200px;
+
+    background-color: white;
+    box-shadow: 0px -15px 15px rgb(30, 30, 30);
+
+    border-radius: 30px;
+}
+
+#info-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 100px;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    height: 500px;
+    width: 500px;
+
+    margin: 100px;
+
+    border-radius: 30px;
+
+    box-shadow: 10px 10px 40px rgb(59, 59, 59);
+    color: white;
+    background-color: rgb(59, 59, 59);
+
+    transition: 0.5s;
+}
+.info-block:hover {
+    transform: scale(1.1);
+
+    background-color: rgb(30, 30, 30);
+    box-shadow: 15px 15px 10px gray;
+}
+
+.info-block img {
+    width: 330px;
+
+    box-shadow: 10px 10px 20px rgb(30, 30, 30);
+
+    border-radius: 30px;
+}
+
+#myworks-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+
+    margin: 100px 300px;
+    padding: 50px 100px;
+    padding-bottom: 100px;
+
+    border-radius: 30px;
+    background-color: rgb(59, 59, 59);
+}
+
+.myworks-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+}
+
+.mywork-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 50px 100px;
+
+    background-color: white;
+
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px rgb(30, 30, 30);
+    
+    transition: 0.5s;
+}
+
+.mywork-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mywork-img img {
+    width: 350px;
+    height: 199px;
+
+    border-radius: 15px;
+
+    box-shadow: 10px 10px 30px black;
+
+    transition: 1s;
+}
+.mywork-img img:hover {
+    transform: scale(1.1);
+
+    box-shadow: 10px 10px 10px gray;
+}
+
+.mywork-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 40%;
+}
+
+.mywork-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 300px;
+
+    padding: 50px;
+
+    color: white;
+    background-color: rgb(59, 59, 59);
+
+    border-radius: 15px 15px 0px 0px;
+}
+
+.mywork-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mywork-button {
+    margin: 0;
+    padding: 0px;
+
+    color: white;
+    background-color: transparent;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.mywork-button div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 140px;
+    padding: 30px;
+
+    color: white;
+    background-color: rgb(42, 42, 42);
+
+    border-radius: 0px 0px 0px 15px;
+
+    transition: 0.2s;
+}
+.mywork-button div:hover {
+    background-color: rgb(20, 20, 20);
+}
+
+#downloadwork-button div {
+    border-radius: 0px 0px 0px 15px;
+}
+
+#githublink-button div {
+    border-radius: 0px 0px 15px 0px;
+}
+
+/* #dowloadwork-button {
+    margin: 0;
+    padding: 0px;
+
+    color: white;
+    background-color: transparent;
+
+    border: none;
+}
+
+#dowloadwork-button div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 340px;
+    margin-bottom: 50px;
+    padding: 30px;
+
+    color: white;
+    background-color: rgb(59, 59, 59);
+
+    border-radius: 0px 0px 15px 15px;
+
+    transition: 0.2s;
+}
+#dowloadwork-button div:hover {
+    background-color: rgb(30, 30, 30);
+} */
+
+
+#contacts-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 50px 100px;
+}
+
+.contacts-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+.contacts-block-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.contacts-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    padding: 25px 20px;
+
+    color: white;
+    background-color: rgba(59, 59, 59);
+    box-shadow: 10px 10px 30px rgb(30, 30, 30);
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+.contacts-block:hover {
+    transform: scale(1.1);
+
+    background-color: rgb(30, 30, 30);
+    box-shadow: 10px 10px 10px gray;
+}
+
+.contacts-block img {
+    height: 124px;
+
+    border-radius: 15px;
+}
+
+
+#message-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    width: 450px;
+
+    padding: 50px 100px;
+
+    color: white;
+    background-color: rgb(59, 59, 59);
+
+    border-radius: 30px 30px 0px 0px;
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.message-form input {
+    width: 420px;
+    height: 50px;
+
+    padding: 0px 30px;
+
+    box-shadow: 10px 10px 30px rgb(30, 30, 30);
+
+    border: none;
+    border-radius: 15px;
+}
+
+#sendbutton {
+    margin: 0px;
+    margin-top: -1px;
+
+    color: white;
+    background-color: transparent;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+#sendbutton div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    width: 450px;
+
+    padding: 50px 100px;
+
+    color: white;
+    background-color: rgb(42, 42, 42);
+
+    border-radius: 0px 0px 30px 30px;
+
+    transition: 0.5s;
+}
+#sendbutton div:hover {
+    background-color: rgb(20, 20, 20);
+}
+
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+
+    color: white;
+    background-color: rgb(59, 59, 59);
+}
+
+#footer span {
+    text-shadow: 0px 0px 10px white;
+}
