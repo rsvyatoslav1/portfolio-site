@@ -246,22 +246,17 @@ a {
 }
 
 .mywork-button {
-    margin: 0;
-    padding: 0px;
-
-    color: white;
-    background-color: transparent;
-
-    border: none;
-
-    cursor: pointer;
-}
-
-.mywork-button div {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    margin: 0;
+    padding: 0px;
+
+    border: none;
+
+    cursor: pointer;
 
     width: 140px;
     padding: 30px;
@@ -269,19 +264,17 @@ a {
     color: white;
     background-color: rgb(42, 42, 42);
 
-    border-radius: 0px 0px 0px 15px;
-
     transition: 0.2s;
 }
-.mywork-button div:hover {
+.mywork-button:hover {
     background-color: rgb(20, 20, 20);
 }
 
-#downloadwork-button div {
+.downloadwork-button {
     border-radius: 0px 0px 0px 15px;
 }
 
-#githublink-button div {
+.githublink-button {
     border-radius: 0px 0px 15px 0px;
 }
 
@@ -430,16 +423,14 @@ a {
     border: none;
 
     cursor: pointer;
-}
 
-#sendbutton div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
 
-    width: 450px;
+    width: 650px;
 
     padding: 50px 100px;
 
@@ -450,7 +441,7 @@ a {
 
     transition: 0.5s;
 }
-#sendbutton div:hover {
+#sendbutton:hover {
     background-color: rgb(20, 20, 20);
 }
 
